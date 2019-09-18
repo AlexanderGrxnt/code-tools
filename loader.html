@@ -3,6 +3,7 @@
   <head>
     <title>Page Title</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="loader.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link
       rel="stylesheet"
@@ -12,7 +13,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <script type="text/javascript" src="nav.js"></script>
+    
   </head>
   <body>
     <div class="wrapper">
@@ -30,14 +31,9 @@
 
       <div id="overlayNav" class="overlay">
 
-        
-
-        <!-- <a href="javascript:void(0)" class="closebtn" 
-        onClick="closeNav()">&times;</a> -->
-
         <div class="overlay-content">
           <a href="#">About</a>
-          <a href="loader.html">Loader</a>
+          <a href="#">Stuff</a>
           <a href="#">Blah</a>
         </div>
 
@@ -46,17 +42,23 @@
 
       <content>
           <div class = "content-box">
-            <h1>Title</h1>
-            <h4>Subtitle</h4>
+            <h1>Bouncing Loader</h1>
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
           
           </div>
           
         </content>
 
     </div>
+    
     <footer>
       Copyright
     </footer>
+    <script type="text/javascript" src="nav.js"></script>
   </body>
 
 </html>

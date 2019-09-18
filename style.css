@@ -1,80 +1,111 @@
-/* body{
-    background-color: #020202;
-} */
-
-.wrapper{
-display: grid;
-/* grid-template-columns:  repeat(12, [col-start] 1fr); */
-/* grid-template-columns: 1fr 0.4fr 1fr 1fr 1fr 0.2fr; */
-/* grid-template-columns: 1fr 5fr; */
-/* grid-template-areas: 
-"nav content"; */
-grid-template-columns: auto 1fr;
-
-/* "footer footer"; */
-
-height: 100vh;
-/* grid-template-rows: 0.01fr 0.3fr 0.37fr 0.3fr 0.02fr; */
-}
-
-content{
-    background-color: #A9A9A9
-    
-}
-
-.content-box{
-margin: 50px;
-/* background-color: white; */
-height: 80vh;
-border-radius: 10px;
-}
 
 nav{
     background-color: #263238;
-    /* grid-column: col-start / span 1; */
     display: flex;
     flex-direction: column;
     font-size: 18px;
     height: 100vh;
-   /* grid-row: 1/6; */
     width:  70px;
-   position: sticky;
-  /* position: fixed;
-   float: left; 
-   
-   height: 100%; */
+    position: fixed;
+    left: 0;
+    z-index: 2;
 }
 
-/* .boundaryBox{
-    grid-column: col-start 3 / span 9;
-    grid-row: 2/5; 
-    background-color: white;
-    border: solid;
-    border-radius: 10px;
-} */
+#logo{
+    text-align: center;
+    color: white;
+}
 
-footer{
-    /* grid-column: col-start 2 / span 11; */
-/* grid-row: 5/6; */
-background-color: grey;
-position: sticky;
-bottom: 0;
-color: white;
+content{
+    background-color: #A9A9A9;
+    position: static;
+}
+
+.content-box{
+margin: 0px; 
+padding: 20px;
 text-align: center;
 }
 
 
-
-/* .fa fa-home{
-    font-size: 30px;
-} */
+footer{
+background-color: grey;
+position: fixed;
+bottom: 0;
+z-index: 1;
+width: 100%;
+color: white;
+text-align: center;
+}
 
 i{
     color: white;
-    padding: 20px 20px;
+     padding: 23px;
+    
 }
 
-#home hover{
-    background-color: yellow;
+nav p{
+    text-align: center;
+    /* padding-bottom: 20px; */
+}
 
- 
+.navHover :hover{
+    background-color: grey;
+cursor: pointer;
+}
+
+.overlay{
+    width: 0;
+    height: 200px;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /* background-color: greenyellow; */
+    left: 0;
+    top: 20px;
+}
+
+.overlay-content{
+    position: relative;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    margin-top: 30px;
+    background-color: greenyellow;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: flex;
+flex-direction: column;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+color: #f1f1f1;
+background-color: grey;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 30px;
+}
+
+.panel{
+    width: 0;
+    height: 100vh;
+    z-index: 0;
+    transition: 0.5s;
+    position: fixed;
+}
+
+.panel:hover{
+    /* background-color: rgba(135,189,244, 0.5); */
+    cursor: alias;
+}
