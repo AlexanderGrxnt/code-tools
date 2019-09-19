@@ -12,11 +12,18 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <script type="text/javascript" src="nav.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+       $(function(){ 
+         $( "#nav-load" ).load( "reuse-nav.html");
+       });
+        </script>
+    
   </head>
   <body>
     <div class="wrapper">
-      <nav>
+      <div id="nav-load"></div>
+      <!-- <nav>
         <p id="logo">{AG}</p>
         <p class="navHover" id="home" onclick="openNav()">
           <i class="material-icons">home</i>
@@ -30,11 +37,6 @@
 
       <div id="overlayNav" class="overlay">
 
-        
-
-        <!-- <a href="javascript:void(0)" class="closebtn" 
-        onClick="closeNav()">&times;</a> -->
-
         <div class="overlay-content">
           <a href="#">About</a>
           <a href="loader.html">Loader</a>
@@ -42,7 +44,7 @@
         </div>
 
       </div>
-      <div id="blankPanel" class="panel" onClick="closeNav()"></div>
+      <div id="blankPanel" class="panel" onClick="closeNav()"></div> -->
 
       <content>
           <div class = "content-box">
@@ -54,9 +56,12 @@
         </content>
 
     </div>
+
     <footer>
       Copyright
     </footer>
+
+    <script type="text/javascript" src="nav.js"></script>
   </body>
 
 </html>
