@@ -38,7 +38,8 @@
 
 #header{
     font-family: "Roboto";
-  
+  padding: 0;
+  margin: 0;
     font-size: 45px;
     font-weight: 300;
     color: #0089fa;
