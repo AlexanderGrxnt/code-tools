@@ -9,13 +9,20 @@ nav{
     background-color: #263238;
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 32px;
     height: 100vh;
-    width:  70px;
+    width:  200px;
     position: fixed;
     left: 0;
     z-index: 2;
     /* transition: 3s; */
+}
+
+@media only screen and (min-width: 768px) {
+   nav{
+    width:  70px;
+    font-size: 18px;
+   }
 }
 
 @keyframes slideInFromLeft{
