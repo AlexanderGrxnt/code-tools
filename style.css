@@ -18,7 +18,7 @@ nav{
     /* transition: 3s; */
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width:600px)  {
    nav{
     width:  70px;
     font-size: 18px;
