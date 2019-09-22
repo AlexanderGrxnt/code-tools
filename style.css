@@ -1,6 +1,7 @@
 body{
-    background-color: #f1f1f1;
-    font-family: "Roboto";
+    /* background-color: #f1f1f1; */
+    background-color: ghostwhite;
+    font-family: "Segoe UI";
     margin: 0;
 }
 
@@ -41,21 +42,46 @@ nav{
 
 #logo{
     text-align: center;
-    color: white;
+    color: #ee6e73;
+    font-size: 20px;
+    font-weight: 550;
+    background-color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 }
 
 content{
     background-color: #A9A9A9;
     position: static;
+    
 }
 
 .content-box{
 margin: 0px; 
-padding: 10px 70px 20px 70px;
-
+padding: 0px 0px 20px 70px;
+display: flex;
+flex-direction: column;
 text-align: center;
 }
 
+
+
+#header{
+    font-family: "Segoe UI";
+  padding-top: 20px;
+  margin: 0px;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #ee6e73;
+    line-height: 60px;
+}
+
+#sub-header{
+    margin: 0;
+    color: #ee6e73;
+    font-family: "Segoe UI";
+}
 
 footer{
 background-color: rgb(185, 178, 178);
@@ -93,7 +119,7 @@ cursor: pointer;
     transition: 0.5s;
     /* background-color: greenyellow; */
     left: 0;
-    top: 20px;
+    /* top: 20px; */
 }
 
 .overlay-content{
@@ -101,13 +127,21 @@ cursor: pointer;
     top: 0;
     width: 100%;
     text-align: right;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-right: 10px;
     background-color: white;
     border: solid;
     border-width: 1px;
     border-color: rgb(179, 178, 178);
     box-shadow: -3px 1px 5px 0px #979696;
+}
+
+#overlayNav-HTML{
+    top: 80px;
+}
+
+#overlayNav-CSS{
+    top: 150px;
 }
 
 .line{

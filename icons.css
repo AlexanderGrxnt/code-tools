@@ -1,0 +1,49 @@
+#iconContent{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 50px;
+    padding-top: 30px;
+    justify-content: flex-start;
+}
+
+.icon-box{
+    padding: 5px;
+    margin: 10px;
+    border: solid;
+    border-width: 4px;
+    border-color: rgb(214, 210, 210);
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+}
+
+.icons{
+    color: rgb(87, 79, 79);
+}
+
+.tooltiptext {
+    visibility: hidden;
+    /* width: 100%; */
+    background-color: rgb(87, 79, 79);
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+
+ 
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .icon-box:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .icon-box .tooltiptext {
+    top: -10px;
+    left: 5%;
+  }
