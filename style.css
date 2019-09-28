@@ -10,9 +10,10 @@ nav{
     background-color: #263238;
     display: flex;
     flex-direction: column;
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: 18px;
     height: 100vh;
-    width:  200px;
+    width:  70px;
     position: fixed;
     left: 0;
     z-index: 2;
