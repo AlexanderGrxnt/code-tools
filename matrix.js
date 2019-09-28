@@ -11,7 +11,7 @@ c.width = window.innerWidth;
 english = english.split("");
 
 //Set columns
-var font_size = 10;
+var font_size = 15;
 var columns = Math.floor(c.width/font_size) + 1;
 
 //Set drops
