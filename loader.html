@@ -28,11 +28,78 @@
         <div class="content-box">
           <!-- Bouncing -->
           <h1 id="header">Loaders</h1>
-          
-          <div class="loader">
+
+          <div
+            class="loader"
+            onclick="document.getElementById('modal').style.display='block'"
+          >
             <span></span>
             <span></span>
             <span></span>
+          </div>
+
+          <div id="modal" class="loader-modal">
+            <div class="modal-content">
+              <span
+                class="close"
+                onclick="document.getElementById('modal').style.display='none'"
+                >&times;</span
+              >
+              <div class="modalCSS">
+              <pre>
+                <!-- <code> -->
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.loader > span{
+  background: #0089fa;
+  border-radius: 50%;
+  margin: 5rem 0.5rem;
+  animation: bouncingLoader 0.6s infinite alternate;
+  
+}
+
+.loader > span:nth-child(2){
+  animation-delay: 0.2s;
+}
+
+.loader > span:nth-child(3){
+  animation-delay: 0.4s;
+}
+
+@keyframes bouncingLoader{
+  from{
+      width: 0.1rem;
+      height: 0.1rem;
+      opacity: 1;
+      transform: translate3d(0);
+  }
+  to{
+      width: 1rem;
+      height: 1rem;
+      opacity: 0.3;
+      transform: translate3d(0, -1.2rem, 0);
+  }
+}
+                <!-- </code> -->
+              </pre>
+              </div>
+              <div class="modalHTML">
+<pre>
+&lt;div>
+  &lt;span>&lt;/span>
+  &lt;span>&lt;/span>
+  &lt;span>&lt;/span>
+&lt;/div>
+                  <!-- </code> -->
+                </pre>
+
+              </div>
+            </div>
           </div>
 
           <!-- Facebook -->
@@ -42,11 +109,19 @@
             <div></div>
           </div>
 
-          <br>
-          <br>
+          <br />
+          <br />
           <!-- circle -->
-          <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-          
+          <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
       </content>
     </div>
