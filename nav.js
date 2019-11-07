@@ -16,7 +16,7 @@ function openCSSNav(){
     if(window.screen.width < 768)
         document.getElementById("overlayNav-CSS").style.width ="200px";
     else
-        document.getElementById("overlayNav-CSS").style.width ="150px";
+        document.getElementById("overlayNav-CSS").style.width ="180px";
     document.getElementById("blankPanel").style.width ="100%";
     document.getElementById("overlayNav-HTML").style.width ="0%";
 }

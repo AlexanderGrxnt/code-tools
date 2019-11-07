@@ -181,7 +181,7 @@
 /* Modal Content/Box */
 .modal-content {
   background-color: #fff0c7;
-  margin: 10% auto; /* 15% from the top and centered */
+  margin: 5% auto; /* 15% from the top and centered */
   padding: 10px;
   border: 1px solid rgb(138, 138, 138);
   width: 70%; /* Could be more or less, depending on screen size */
@@ -224,9 +224,19 @@
 
 .modalHTML{
   overflow: auto;
-  height: 20vh;
+  height: 10vh;
   border: 1px solid rgb(187, 187, 187);
   text-align: left;
   padding: 10px;
+  
   margin: 10px;
 }
+
+h5{
+  line-height: 1fr;
+  margin: 0;
+  padding: 0 10px;
+  text-align: left;
+}
+
+
